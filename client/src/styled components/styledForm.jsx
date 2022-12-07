@@ -119,9 +119,10 @@ export const StyledSelect = styled.select`
   -moz-appearance: none;
   background-color: transparent;
   border: 4px solid white;
-  padding: 5px;
-  margin: 5px;
+  padding: 4px;
+  margin: 7px;
   height: 2.5rem;
+  width: 12rem;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;

@@ -12,9 +12,7 @@ export default function Start() {
   return (
     <StyledStart>
       <StyledText>
-        Hey! Do you want to listen to new music based on your mood? Do you want
-        to pick something especially danceable or only instrumental? This tool
-        is for you. <div>Enjoy!</div>
+       Let's see what your personality type usually listens to! <div>Enjoy!</div>
       </StyledText>
       <StyledButton start="true" onClick={handleStart}>
         Start!

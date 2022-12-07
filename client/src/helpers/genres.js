@@ -198,5 +198,5 @@ const personalities = [
   },
 ]
 
-export { personalities, genres };
+export { personalities, genres};
 

@@ -18,7 +18,7 @@ import {
 import { useState } from "react";
 
 export default function Form1() {
-  const personality = useSelector((state) => state.personality)
+  const personality = useSelector((state) => state.personality);
   const dispatch = useDispatch();
   const [clicked, setClicked] = useState(false);
 
@@ -37,7 +37,7 @@ export default function Form1() {
   return (
     <StyledAsk step1>
       <StyledCentering select>
-        <label htmlFor="genre">What genre do You want to hear?</label>
+        <label htmlFor="genre">What's your personality type?</label>
         <StyledSelectContainer>
           <StyledSelect type="submit" value={`${personality}`} onChange={handlePersonality}>
             <StyledOption>Personality Type:</StyledOption>
@@ -51,7 +51,7 @@ export default function Form1() {
           <StyledArrow />
         </StyledSelectContainer>
         <StyledWarning opacity={clicked && personality === "" ? 1 : 0} margin>
-          Please select genre
+          Please select personality
         </StyledWarning>
       </StyledCentering>
       <StyledButton next onClick={sendForm1}>

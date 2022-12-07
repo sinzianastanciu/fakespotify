@@ -24,18 +24,16 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <StyledApp>
-          <StyledHeading>Choosify</StyledHeading>
+          <StyledHeading>Personality</StyledHeading>
           {currStep === "Start" ? <Start /> : null}
-          {currStep === "Form1" ||
-          currStep === "Form2" ||
-          currStep === "Form3" ? (
+          {currStep === "Form1" ? (
             <FormContainer />
           ) : null}
           {currStep === "Loader" ? <Loader /> : null}
           {currStep === "Player" && recommendations ? <Player /> : null}
           <StyledFooter>
             Created by{" "}
-            <StyledLink href="https://github.com/OlaFro">Ola Frost</StyledLink>.
+            <StyledLink>Sînziana & Luiza</StyledLink>.
             Powered by Spotify API.
           </StyledFooter>
         </StyledApp>

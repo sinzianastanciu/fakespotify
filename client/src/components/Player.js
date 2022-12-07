@@ -4,13 +4,6 @@ import { useState } from "react";
 import Query from "./Query";
 import {
   currStep,
-  setGenre,
-  setDance,
-  setInstrument,
-  setMode,
-  setTempo,
-  setPopularity,
-  setValance,
   setPersonality,
 } from "../redux/actions";
 import {
