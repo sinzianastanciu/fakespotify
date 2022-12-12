@@ -25,7 +25,7 @@ router.post("/query", async (req, res, next) => {
   let token = response1.data.access_token;
 
   axios({
-    url: `${url2}?limit=12&market=DE&seed_genres=${data.personality}`,
+    url: `${url2}?limit=12&market=DE&seed_genres=${data.genres}`,
     method: "GET",
     headers: {
       "Content-Type": "application/json",

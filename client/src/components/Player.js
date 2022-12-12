@@ -29,10 +29,9 @@ export default function Player() {
   }
   return (
     <StyledPlayer>
-      <StyledHeading>Bunch of songs Spotify has for You:</StyledHeading>
+      <StyledHeading>{`Bunch of songs Spotify has for You, ${personality}:`}</StyledHeading>
       <StyledText>
-        <StyledH3>You've chosen:</StyledH3>
-        <Query noDesc choice="personality" output={personality} />
+        <Query noDesc choice="Your personality type:" output={personality} />
       </StyledText>
 
       <StyledGrid>

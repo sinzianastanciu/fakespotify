@@ -43,7 +43,7 @@ export const StyledCentering = styled.div`
 export const StyledButton = styled.div`
   box-sizing: content-box;
   background-color: white;
-  color: ${(props) => props.theme.aqua};
+  color: #339933;
   padding: 5px 15px;
   margin: 0;
   font-size: 1.2rem;
@@ -66,7 +66,7 @@ export const StyledButton = styled.div`
 
   ::after {
     content: "";
-    background-color: ${(props) => props.theme.pink};
+    background-color: #339933;
     position: absolute;
     left: -25%;
     width: 7rem;
@@ -134,7 +134,7 @@ export const StyledSelect = styled.select`
 `;
 export const StyledOption = styled.option`
   -moz-appearance: none;
-  background-color: ${(props) => props.theme.aqua};
+  background-color: #339933;
   color: white;
 `;
 
@@ -152,13 +152,13 @@ export const StyledArrow = styled.span`
   ::after {
     content: "⌄";
     position: absolute;
-    color: ${(props) => props.theme.pink};
+    color: #339933;
     left: 13px;
     top: 0;
     transform: scale(1.5);
   }
   :hover::after {
-    color: ${(props) => props.theme.aqua};
+    color: #339933;
   }
 `;
 
@@ -188,13 +188,13 @@ export const StyledInput = styled.input`
     width: 100%;
     height: 3px;
     cursor: pointer;
-    background-color: white;
+    background-color: black;
   }
   ::-ms-track {
     width: 100%;
     height: 3px;
     cursor: pointer;
-    background-color: white;
+    background-color: black;
   }
 
   ::-webkit-slider-thumb {
@@ -202,7 +202,7 @@ export const StyledInput = styled.input`
     height: 20px;
     width: 3px;
     cursor: pointer;
-    background-color: white;
+    background-color: black;
     margin-top: -8px;
   }
 
@@ -221,7 +221,7 @@ export const StyledRadio = styled.input`
 `;
 
 export const StyledWarning = styled.p`
-  color: ${(props) => props.theme.warning};
+  color: red;
   font-size: 0.8rem;
   font-weight: 900;
   margin-top: ${(props) => (props.margin ? "0.4rem" : "-0.2rem")};

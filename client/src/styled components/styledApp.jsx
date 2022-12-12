@@ -16,7 +16,7 @@ export const StyledApp = styled.div`
 
 let shadow = "";
 for (let i = 0; i < 2000; i++) {
-  shadow += (shadow ? "," : "") + i * 1 + "px " + i * 1 + "px 0 #E5BACB";
+  shadow += (shadow ? "," : "") + i * 1 + "px " + i * 1 + "px 0 #339933";
 }
 
 export const StyledHeading = styled.header`
@@ -59,7 +59,7 @@ export const StyledLink = styled.a`
   color: white;
   text-decoration: none;
   :hover {
-    background-color: ${(props) => props.theme.pink};
+    background-color: black;
     color: white;
   }
 `;

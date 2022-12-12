@@ -19,11 +19,14 @@ import { useState } from "react";
 
 export default function Form1() {
   const personality = useSelector((state) => state.personality);
+  const genres = useSelector((state) => state.genre);
   const dispatch = useDispatch();
   const [clicked, setClicked] = useState(false);
 
   function handlePersonality(e) {
     dispatch(setPersonality(e.target.value));
+    const listOfGenres = personalities.find((el) => el.personality === e.target.value).genres.toString();
+    dispatch(setGenre(listOfGenres));
   }
  
   function sendForm1(e) {
@@ -43,7 +46,7 @@ export default function Form1() {
             <StyledOption>Personality Type:</StyledOption>
             <StyledOption>---------</StyledOption>
             {personalities.map((elem) => (
-              <StyledOption value={`${elem.genres}`} key={`${personalities.indexOf(elem)}`}>
+              <StyledOption item={elem} key={`${personalities.indexOf(elem)}`}>
                 {elem.personality}
               </StyledOption>
             ))}

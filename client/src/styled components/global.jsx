@@ -8,7 +8,7 @@ body{
   padding: 0;
   width: 99.8vw;
   /* height: 100vh; */
-  background: ${(props) => props.theme.gradient};
+  background: black;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Montserrat', sans-serif;

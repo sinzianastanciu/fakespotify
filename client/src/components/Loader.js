@@ -6,7 +6,7 @@ import axios from "axios";
 
 export default function Loader() {
   const personality = useSelector((state) => state.personality);
-
+  const genres = useSelector((state) => state.genre);
   const dispatch = useDispatch();
 
   React.useEffect(() => {
@@ -17,7 +17,7 @@ export default function Loader() {
       method: "POST",
 
       data: {
-        personality
+        genres
       },
     })
       .then((res) => {
