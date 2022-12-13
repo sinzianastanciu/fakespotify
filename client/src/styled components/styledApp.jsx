@@ -55,6 +55,20 @@ export const StyledText = styled.h2`
   }
 `;
 
+export const StyledText1 = styled.h3`
+  border: 2px solid white;
+  width: 40%;
+  max-height: 15rem;
+  padding: 1rem;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.md}px) {
+    font-size: 0.5rem;
+  }
+  @media (min-width: ${(props) => props.theme.breakpoints.lg}px) {
+    font-size: 1vw;
+  }
+`;
+
 export const StyledLink = styled.a`
   color: white;
   text-decoration: none;
